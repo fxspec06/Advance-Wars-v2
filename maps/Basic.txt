@@ -1,0 +1,24 @@
+# Author Serge-David
+# Map File testing, lets see if we can make this pretty. Map name is it's file name.
+# 1 = Map Info : width(xx) height(xx) players(x)
+# 2 = Extra Info : Author(String) Description(String) [A-z 0-9], the desc and author are seperated by the first space.
+# 3 = Terrain Info (row) : tile(x) (To be xx for 256 types max instead of 16) //TODO: Think about setting it up so things like water/road alignment setup in game instead of in the map file
+# 4 = Building Info : owner(x) type(xx)
+# 5 = Unit info : owner(x) x(xx) y(xx) type(xx)
+1 0f0b2
+2 Serge-David This is a description of the map.
+3 102001003
+4 4121131101110012
+4 0000000000000120
+4 2222222222221020
+4 3333333333330201
+4 0001000200201010
+4 0102001020200012
+4 0012420201010021
+4 0001230000003322
+4 4012031023000232
+4 3120100200310233
+4 0010020030020032
+4 0101020030200022
+5 0050601
+5 1070602
