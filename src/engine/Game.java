@@ -13,7 +13,7 @@ public class Game extends JFrame {
 	private static final String build = "0";
 	private static final String version = "2";
 	public static final String name = "Strategy Game";
-	public static int ScreenBase = 64;//Bit size for the screen, 16 / 32 / 64 / 128
+	public static int ScreenBase = 32;//Bit size for the screen, 16 / 32 / 64 / 128
 	public static boolean dev = true;//Is this a dev copy or not... useless? D:
 	
 	public static enum State {STARTUP, MENU, PLAYING, EDITOR};
@@ -68,6 +68,13 @@ public class Game extends JFrame {
 		add(gui);
 		gui.setFocusable(true);
 		gui.requestFocusInWindow();
+		
+		// ADDED
+		// SETTING 5 DOES NOT WORK.
+		// DEFAULT IS 2.
+		// 4 is good here
+		gui.ResizeScreen(4);
+		
 		
 		//load images, initialize the map, and adds the input settings.
 		load = new LoadImages();
